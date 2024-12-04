@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior:smooth;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url(../font/Neue/NeueMontreal-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Gallery';
+    src: url(../font/Gallery/GalleryModern.otf);
+}
+
+body{
+    padding: 0px 5.5vw;
+    background: #FDF8EF;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+
+}
+
+.head img{
+    width: 200px;
+    height: auto;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.content p{
+    font-family: 'Neue Montreal';
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.bandeau{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F7EEDC;
+    margin-bottom: 100px;
+}
+
+.bandeau img{
+    width: 50%;
+    height: auto;
+}
+
+h1{
+    font-family: 'Gallery';
+    font-size: 5vw;
+    color: black;
+}
+
+.description{
+    font-family: 'Neue Montreal';
+    font-size: 2.11vw;
+    color: black;
+}
+
+.bouton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #FDF8EF;
+
+    font-family: 'Neue Montreal';
+    font-size: 1vw;
+    color: black;
+}
+
+.BigBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+
+    width: 50%;
+    height: auto;
+}
+
+
+H2{
+    font-family: 'Gallery';
+    font-size: 3.5vw;
+    color: black;
+}
+
+.actu{
+    display: flex;
+    flex-direction: column;
+    width: 29%;
+    height: auto;
+    background: #F7EEDC;
+}
+
+.actu div{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 22px;
+    text-align: center;
+}
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
+.article{
+    display: flex;
+    gap: 51px;
+    align-self: stretch;
+    justify-content: space-between;
+}
+
+
+.article p{
+    font-family: 'Neue Montreal';
+    font-size: 1.2vw;
+    color: black !important;
+    text-decoration: none;
+}
+
+h3{
+    font-family: 'Gallery';
+    font-size: 2.5vw;
+    color: black !important;
+    text-decoration: none;
+}
+
+.L-produit{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 39px;
+    flex-wrap: wrap;
+}
+
+.produit{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.produit img{
+    width: 300px;
+    height: auto;
+}
+
+
+.P-name{
+    font-family: 'Gallery';
+    font-size: 2vw;
+    color: black !important;
+    text-decoration: none;
+}
+
+.P-price{
+    font-family: 'Neue Montreal';
+    font-size: 1.2vw;
+    color: black !important;
+    text-decoration: none;
+}
