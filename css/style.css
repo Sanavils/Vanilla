@@ -4,6 +4,10 @@
     scroll-behavior:smooth;
 }
 
+img{
+    max-width: 100%;
+}
+
 @font-face {
     font-family: 'Neue Montreal';
     src: url(../font/Neue/NeueMontreal-Regular.otf);
@@ -14,8 +18,12 @@
     src: url(../font/Gallery/GalleryModern.otf);
 }
 
-body{
+.container{
     padding: 0px 5.5vw;
+    box-sizing: border-box;
+}
+
+body{
     background: #FDF8EF;
 }
 
@@ -81,6 +89,7 @@ h1{
     justify-content: center;
     align-items: center;
     padding: 15px;
+    box-sizing: border-box;
     background: #FDF8EF;
 
     font-family: 'Neue Montreal';
@@ -118,6 +127,7 @@ H2{
     display: flex;
     flex-direction: column;
     padding: 12px;
+    box-sizing: border-box;
     gap: 22px;
     text-align: center;
 }
@@ -155,8 +165,7 @@ h3{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-around;
-    flex-wrap: wrap;    
+    justify-content: space-around; 
     gap: 20px;
 }
 
@@ -167,7 +176,7 @@ h3{
     gap: 8px;
     flex-shrink: 0;
 
-    
+    width: calc((100% - (20px * 3)) / 4);
 }
 
 .produit img{
@@ -175,19 +184,19 @@ h3{
     height: auto;
 }
 
+.produit p{
+    color: black;
+    text-decoration: none;
+}
 
 .P-name{
     font-family: 'Gallery';
-    font-size: 2vw;
-    color: black !important;
-    text-decoration: none;
+    font-size: max(2vw, 16px);
 }
 
 .P-price{
     font-family: 'Neue Montreal';
     font-size: 1.2vw;
-    color: black !important;
-    text-decoration: none;
 }
 
 
@@ -229,8 +238,9 @@ h3{
         right: 0;
         background-color: #FDF8EF;
         padding: 20px;
+        box-sizing: border-box;
         width: 50%;
-        height: 100vh;
+        min-height: 100dvh;
 
     }
 
@@ -242,19 +252,39 @@ h3{
         font-size: 18px;
         text-align: center;
     }
+    
+    .produit{
+        width: calc((100% - 20px) / 2);
+    }
+}
+
+@media (max-width: 400px) {
+    .L-produit{
+        justify-content: center;
+    }
+    .produit{
+        width: auto;
+    }
 }
 
 footer{
     display: flex;
     flex-direction: column;
-    background: #345858;
-    gap: 60px;
 
+    justify-content: center;
+    background: #345858;
+    gap: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 100px;
 }
 
 .info{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
 
 .desc-footer{
@@ -264,7 +294,8 @@ footer{
 }
 
 .desc-footer img{
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: auto;
 }
 
@@ -279,10 +310,28 @@ footer{
     display: flex;
     flex-direction: column;
     width: 25%;
+    gap: 20px;
 }
 
 .cgv{
     display: flex;
     flex-direction: row;
     gap: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.liste a{
+    color: #F1E7E0;
+    font-family: 'Neue Montreal';
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+.cgv a{
+    color: #F1E7E0;
+    font-family: 'Neue Montreal';
+    font-size: 16px;
+    text-decoration: none;
 }
