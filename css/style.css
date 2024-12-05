@@ -40,11 +40,11 @@ a{
 .content{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     gap: 20px;
 }
 
-.content p{
+.content a{
     font-family: 'Neue Montreal';
     font-size: 20px;
     color: black;
@@ -153,12 +153,11 @@ h3{
 
 .L-produit{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-evenly;
-    gap: 39px;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;    
+    gap: 20px;
 }
 
 .produit{
@@ -167,6 +166,8 @@ h3{
     align-items: flex-start;
     gap: 8px;
     flex-shrink: 0;
+
+    
 }
 
 .produit img{
@@ -187,4 +188,101 @@ h3{
     font-size: 1.2vw;
     color: black !important;
     text-decoration: none;
+}
+
+
+
+
+
+#menu-toggle {
+    display: none;
+}
+
+/* Style de l'icône du menu burger */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    background-color: black;
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    .content {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #FDF8EF;
+        padding: 20px;
+        width: 50%;
+        height: 100vh;
+
+    }
+
+    #menu-toggle:checked ~ .content {
+        display: flex; 
+    }
+
+    .content a {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background: #345858;
+    gap: 60px;
+
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+}
+
+.desc-footer{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.desc-footer img{
+    width: 300px;
+    height: auto;
+}
+
+.desc-footer p{
+    color: #F1E7E0;
+    font-family: 'Neue Montreal';
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.liste{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.cgv{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
 }
