@@ -37,6 +37,7 @@ a{
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
+    padding: 0px 5.5vw;
 
 }
 
@@ -150,14 +151,14 @@ H2{
 .article p{
     font-family: 'Neue Montreal';
     font-size: 1.2vw;
-    color: black !important;
+    color: black;
     text-decoration: none;
 }
 
 h3{
     font-family: 'Gallery';
     font-size: 2.5vw;
-    color: black !important;
+    color: black ;
     text-decoration: none;
 }
 
@@ -277,6 +278,7 @@ footer{
     padding: 20px;
     box-sizing: border-box;
     margin-top: 100px;
+    padding: 0px 5.5vw;
 }
 
 .info{
