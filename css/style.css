@@ -371,3 +371,98 @@ footer{
 .B-produit h1{
     font-size: 3vw;
 }
+
+.reco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    gap: 20px;
+    
+}
+
+
+.login-container{
+    padding: 0px 5.5vw;
+    margin-top: 50px;
+
+}
+
+
+.login-container h1 {
+
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    font-family: 'Neue Montreal';
+}
+
+.login-form label {
+    font-weight: bold;
+}
+
+.login-form input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 50%;
+}
+
+.forgot-password {
+    text-align: right;
+    color: #2d4e48;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.login-button {
+    background-color: #345858;
+    color: white;
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.create-account {
+    text-align: center;
+    margin-top: 1rem;
+    font-family: 'Neue Montreal';
+}
+
+.create-account a {
+    color: #2d4e48;
+    text-decoration: none;
+
+}
+
+.back-link{
+    font-family: 'Neue Montreal';
+    color: black;
+}
+
+
+.civilite-options {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.civilite-options input {
+    margin-right: 0.5rem;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
