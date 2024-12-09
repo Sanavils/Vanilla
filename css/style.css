@@ -145,6 +145,11 @@ H2{
     gap: 64px;
 }
 
+.actu img{
+    width: 365px;
+    height: auto;
+}
+
 .article{
     display: flex;
     gap: 51px;
