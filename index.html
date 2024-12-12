@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="description here">
-    <link rel="stylesheet" href="css/style.css">
-    <title>VANILLA</title>
+    <meta name="description" content="Bienvenue chez VANILLA ! Découvrez nos pâtisseries éco-responsables, nos recettes anti-gaspillage et nos engagements pour une cuisine durable.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="img/logo.png">
+    <title> VANILLA - Pâtisserie Responsable et Gourmande</title>
 </head>
 
 <body>
 
     <header class="head">
-        <a href="index.html"><img src="img/Plan de travail 4_1.png" alt=""></a>
+        <a href="index.html"><img src="img/logo-beige.png" alt="Logo Vanilla"></a>
     
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="menu-icon">
@@ -22,46 +23,49 @@
         <div class="content">
             <a href="page/Liste-Produit.html">Produit</a>
             <a href="page/La-maison.html">La maison</a>
-            <a href="page/La-maison.html">Blog</a>
+            <a href="page/Liste-blog.html">Blog</a>
+            <a href="page/Panier.html">Panier</a>
             <a href="page/Connexion.html">Connexion</a>
         </div>
     </header>
+
+
     <section class="container">
         <article class="bandeau">
             <div class="BigBox">
                 <h1>Nos Offres Gourmandes</h1>
                 <p class="description">Des douceurs qui respectent 
                     vos papilles et la planète</p>
-                <input class="bouton" type="button" value="En savoir plus">
+                <a href="page/Liste-Produit.html"><input class="bouton" type="button" value="En savoir plus"></a>
             </div>
-            <img src="img/image 5.png" alt="">
+            <img src="img/Fleurenchocolat.png" alt="Gateaux aux chocolat en formes de fleur">
 
         </article>
 
 
         <article class="blog">
-            <H2>Les dernières news</H2>
+            <H2>Les dernière news</H2>
             <div class="article">
-                <a class="actu" href="">
-                    <img src="img/Biscuits de noel.jpg" alt="">
+                <a class="actu" href="page/Blog.html">
+                    <img src="img/Biscuits de noel.png" alt="Biscuits de noel">
                     <div>
                         <h3>La collection de noel arrive !</h3>
                          <p>L’esprit de Noël s’invite à la table avec une collection de pâtisseries spécialement conçue pour réchauffer les cœurs et émerveiller les palais...</p>
                     </div>
                 </a>
     
-                <a class="actu" href="">
-                    <img src="img/cupcakejpg.jpg" alt="">
+                <a class="actu" href="page/Blog.html">
+                    <img src="img/Cupcake.png" alt="Cupcake">
                     <div>
-                        <h3>Pâtisserie Durable et Écoresponsable </h3>
+                        <h3>Pâtisserie Durable et Écoresponsable</h3>
                         <p>L'accent est mis sur des ingrédients respectueux de l’environnement : farines alternatives, édulcorants naturels et cacaos certifiés durables...</p>
                     </div>
                 </a>
     
-                <a class="actu" href="">
-                    <img src="img/livre.png" alt="">
+                <a class="actu" href="page/Blog.html">
+                    <img src="img/Recette.png" alt="recette">
                     <div>
-                        <h3>NOS RECETTES ANTI-GASPI</h3>
+                        <h3>Nos recettes anti-gaspi</h3>
                          <p>Ne jetez plus, transformez ! Des idées recettes et astuces pour donner une seconde vie à vos ingrédients...</p>
                     </div>
                 </a>
@@ -76,25 +80,25 @@
             
 
             <a href="page/Produit.html" class="produit">
-                <img src="img/image 5.png" alt="">
-                <p><span class="P-name">Pain aux chocolat</span></p>
-                <p class="P-price">A partir de 10€</p>
+                <img src="img/Cookies.png" alt="Cookies">
+                <p><span class="P-name">Cookies</span></p>
+                <p class="P-price">A partir de 2€</p>
             </a>
     
             <a href="page/Produit.html" class="produit">
-                <img src="img/image 5.png" alt="">
+                <img src="img/Cannelé.png" alt="photo d'un cannelé">
                 <p><span class="P-name">Cannelés</span></p>
                 <p class="P-price">A partir de 3€</p>
             </a>
     
             <a href="page/Produit.html" class="produit">
-                <img src="img/image 5.png" alt="">
+                <img src="img/Biscuits de noel.png" alt="Biscuits de noel">
                 <p><span class="P-name">Biscuits de nöel</span></p>
                 <p class="P-price">A partir de 10€ les 20</p>
             </a>
     
             <a href="page/Produit.html" class="produit">
-                <img src="img/image 5.png" alt="">
+                <img src="img/Buche framboise.png" alt="buche framboise">
                 <p><span class="P-name">Buche fruits rouge</span></p>
                 <p class="P-price">A partir de 15€</p>
             </a>
@@ -106,25 +110,34 @@
     <footer>
         <div class="info">
             <div class="desc-footer">
-                <img src="img/Plan de travail 7.png" alt="">
+                <img src="img/logo-beige.png" alt="logo VANILLA">
                 <p>Une pâtisserie écoresponsable qui sublime la gourmandise avec des ingrédients locaux et durables. Notre mission : régaler les amateurs de douceurs tout en respectant l'environnement et en valorisant les producteurs locaux.</p>
             </div>
             
         
             <div class="liste">
-                <a href="">Menu</a>
-                <a href="page/Produit.html">Produit</a>
-                <a href="">Blog</a>
-                <a href="">Blog</a>
-                <a href="">Connexion</a>
+                <a href="index.html">Home</a>
+                <a href="page/Liste-Produit.html">Produit</a>
+                <a href="page/La-maison.html">La maison</a>
+                <a href="page/Liste-blog.html">Blog</a>
+                <a href="page/Connexion.html">Connexion</a>
+                <a href="page/Panier.html">Panier</a>
             </div>
     
             <div class="liste">
-                <a href="">Menu</a>
-                <a href="page/Produit.html">Produit</a>
-                <a href="">Blog</a>
-                <a href="">Blog</a>
-                <a href="">Connexion</a>
+                <div>
+                    <p>Suivez-nous</p><br>
+                    <a href=""><img src="img/ri_instagram-fill.png" alt="logo Instagram"></a>
+                    <a href=""><img src="img/ri_tiktok-fill.png" alt="logo TikTok"></a>
+                    <a href=""><img src="img/ic_baseline-facebook.png" alt="logo Facebook"></a>
+                </div>
+                <div>
+
+                </div>
+
+                <p>Contact</p>
+                <p>30 rue de Charonne 75011 Paris France</p>
+                <p>Tel : 09 53 23 94 40</p>
             </div>
         </div>
         
