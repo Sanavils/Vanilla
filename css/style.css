@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Gallery';
+    src: url('./../font/Gallery/gallerymodern-webfont.eot');
+    src: url('./../font/Gallery/gallerymodern-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./../font/Gallery/gallerymodern-webfont.woff2') format('woff2'),
+         url('./../font/Gallery/gallerymodern-webfont.woff') format('woff'),
+         url('./../font/Gallery/gallerymodern-webfont.ttf') format('truetype'),
+         url('./../font/Gallery/gallerymodern-webfont.svg#gallery_modernregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -20,14 +32,15 @@ img{
     src: url(../font/Neue/NeueMontreal-Bold.otf);
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Gallery';
     src: url(../font/Gallery/GalleryModern.otf);
-}
+} */
 
 
 body{
     background: #FDF8EF;
+    min-width: 300px;
 }
 
 a{
